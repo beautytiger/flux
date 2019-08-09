@@ -111,6 +111,7 @@ jobs:
       - run: make all
       - run: make e2e
       - run: make test-docs
+      - run: git status
       - save_cache:
           key: cache-{{ checksum "Makefile" }}
           paths:
